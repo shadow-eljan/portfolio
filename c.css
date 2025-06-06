@@ -183,18 +183,23 @@ nav a.active::after {
   }
 }
 
-/* Mobile adjustments */
 @media (max-width: 600px) {
   .profile-container {
     width: 220px;
     height: 220px;
   }
-  
+
   .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 180px;  /* reduced from 200px */
+    height: 180px;
+  }
+
+  .profile-container::after {
+    width: 90%;    /* reduced from 95% */
+    height: 90%;
   }
 }
+
 
 .hero h1 {
   font-size: 3.5rem;
