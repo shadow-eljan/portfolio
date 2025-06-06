@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Eljan Rai</title>
+  <link rel="icon" href="img/er6.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <style>
+    :root {
+      --bg: #0f172a;      
+      --text: #f1f5f9;      
+      --primary: #3b82f6;    
+      --secondary: #0ea5e9;
+      --accent: #f59e0b;
+      --card: #1e293b;       
+      --border: #334155;   
+      --success: #10b981;
+      --gradient-start: #2563eb;
+      --gradient-end: #0ea5e9;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      scroll-behavior: smooth;
+      color: var(--text);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      font-weight: 700;
+    }
+    
+    .playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+  <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo"><a href="#about"><img src="img/err.png" alt="er"></a></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#languages">Technologies</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section - Image on left, content on right -->
+  <section class="hero" id="about">
+    <div class="hero-img">
+      <div class="profile-container floating">
+        <div style="width:300px;height:300px;border-radius:50%;background:url('img/me3.jpeg') center/cover; z-index:1;"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Eljan Rai</span></h1>
+      <p class="typing-text"></p>
+      <p style="font-size: 1.2rem; max-width: 600px; opacity: 0.9;">
+        I specialize in building responsive, performant web applications with modern technologies.
+      </p>
+      <div class="button-group">
+        <a href="#" class="btn"><i class="fas fa-download"></i> Download CV</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="languages">
+    <div class="section-title">
+      <h2>Technologies & Tools</h2>
+      <p>Technologies I work with to create amazing digital experiences</p>
+    </div>
+    <div class="languages-grid">
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <span>CSS/Tailwind</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <span>Git</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+        <span>JavaScript</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <span>React</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <span>Node.js</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <span>HTML</span>
+      </div>
+      <div class="lang-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p>Check out some of my recent work</p>
+    </div>
+    <div class="projects-list">
+      <div class="project-card">
+        <h3>Weather Dashboard</h3>
+        <p>A responsive weather application that provides real-time weather updates using OpenWeatherMap API. Features include location-based forecasts, 5-day outlook, and interactive weather maps.</p>
+        <div class="tech-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Tailwind CSS</span>
+          <span>Chart.js</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Platform</h3>
+        <p>A modern portfolio website with dark/light theme toggle, responsive design, and interactive elements. Built with a focus on performance and accessibility.</p>
+        <div class="tech-stack">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>GSAP</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>To Do List Application</h3>
+        <p>A to do list application</p>
+        <div class="tech-stack">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>React</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Task Management System</h3>
+        <p>Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.</p>
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Firebase</span>
+          <span>Material UI</span>
+          <span>Redux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Hobbies Section -->
+<section id="hobbies">
+  <div class="section-title">
+    <h2>My Hobbies</h2>
+    <p>Anime and manga I enjoy</p>
+  </div>
+  <div class="hobbies-container">
+    <div class="hobby-section">
+      <h3 class="hobby-title"><i class="fas fa-tv"></i> Anime</h3>
+      <div class="hobby-grid">
+        <a href="https://hianimez.to/one-piece-100" target="_blank" class="hobby-card">
+          <img src="img/one.jpg" alt="One Piece">
+          <span>One Piece</span>
+        </a>
+        <a href="https://hianimez.to/naruto-677" target="_blank" class="hobby-card">
+          <img src="img/naruto.jpg" alt="Naruto">
+          <span>Naruto</span>
+        </a>
+        <a href="https://hianimez.to/bleach-806" target="_blank" class="hobby-card">
+            <img src="img/ble.jpg" alt="Bleach">
+            <span>Bleach</span>
+        </a>
+        <a href="https://hianimez.to/demon-slayer-kimetsu-no-yaiba-47" target="_blank" class="hobby-card">
+          <img src="img/dms.jpg" alt="Demon Slayer">
+          <span>Demon Slayer</span>
+        </a>
+        <a href="https://hianimez.to/dragon-ball-super-1692" target="_blank" class="hobby-card">
+          <img src="img/dbz.jpg" alt="Dragon Ball Super">
+          <span>Dragon Ball Super</span>
+        </a>
+        <a href="https://hianimez.to/attack-on-titan-112" target="_blank" class="hobby-card">
+          <img src="img/atk.jpg" alt="Attack on Titan">
+          <span>Attack on Titan</span>
+        </a>
+        <a href="https://hianimez.to/jujutsu-kaisen-tv-534" target="_blank" class="hobby-card">
+          <img src="img/jjk.jpg" alt="Jujutsu Kaisen">
+          <span>Jujutsu Kaisen</span>
+        </a>
+        <a href="https://hianimez.to/hunter-x-hunter-2" target="_blank" class="hobby-card">
+          <img src="img/hxh.jpg" alt="Hunter x Hunter">
+          <span>Hunter x Hunter</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="hobby-section">
+      <h3 class="hobby-title"><i class="fas fa-book-open"></i> Manga</h3>
+      <div class="hobby-grid">
+        <a href="https://asuracomic.net/series/the-greatest-estate-developer-40d51539" target="_blank" class="hobby-card">
+          <img src="img/dev.webp" alt="The Greatest Estate Developer">
+          <span>The Greatest Estate Developer</span>
+        </a>
+        <a href="https://asuracomic.net/series/nano-machine-8521a899" target="_blank" class="hobby-card">
+          <img src="img/nano.webp" alt="Nano Machine">
+          <span>Nano Machine</span>
+        </a>
+        <a href="https://asuracomic.net/series/omniscient-readers-viewpoint-c1fc42de" target="_blank" class="hobby-card">
+          <img src="img/orv.webp" alt="Omniscient Reader's Viewpoint">
+          <span>Omniscient Reader's Viewpoint</span>
+        </a>
+        <a href="https://asuracomic.net/series/i-am-the-fated-villain-9aaee9d1" target="_blank" class="hobby-card">
+          <img src="img/fated .png" alt="I Am the Fated Villain">
+          <span>I Am the Fated Villain</span>
+        </a>
+        <a href="https://manhuaus.com/manga/magic-emperor-0/" target="_blank" class="hobby-card">
+          <img src="img/Magic-Empero-193x278.jpg" alt="Magic Emperor">
+          <span>Magic Emperor</span>
+        </a>
+        <a href="https://manhuaus.com/manga/the-eternal-supreme/" target="_blank" class="hobby-card">
+          <img src="img/Eternal-Supreme-193x278.jpg" alt="The Eternal Supreme">
+          <span>The Eternal Supreme</span>
+        </a>
+        <a href="https://asuracomic.net/series/pick-me-up-infinite-gacha-0bf7955f" target="_blank" class="hobby-card">
+          <img src="img/pick me up.webp" alt="Pick Me Up, Infinite Gacha">
+          <span>Pick Me Up, Infinite Gacha</span>
+        </a>
+        <a href="https://asuracomic.net/series/the-extras-academy-survival-guide-9bebaced" target="_blank" class="hobby-card">
+          <img src="img/survival.webp" alt="The Extra's Academy Survival Guide">
+          <span>The Extra's Academy Survival Guide</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Contact Section - Form on left, info on right -->
+  <section id="contact">
+    <div class="form-container">
+      <h2>Get In Touch</h2>
+        <form action="https://formspree.io/f/mnnvnwwa" method="POST" class="contact-form">
+          <!-- Add these input attributes for better mobile UX -->
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required 
+                  autocapitalize="words" inputmode="text">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required
+                  autocapitalize="off" inputmode="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required
+                      autocapitalize="sentences"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+    </div>
+      <div class="info-container">
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <strong>Email</strong>
+            <span>eljanrai25@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <strong>Phone</strong>
+            <span>+977-9701150677</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <strong>Location</strong>
+            <span>Kathmandu, Nepal</span>
+          </div>
+        </div>
+      </div>
+      
+      <h3 style="margin-bottom: 1.5rem;">Connect With Me</h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/eljan-rai-13ba17366/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/shadow-eljan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/shadowedleaf/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/eljan.rai" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <hr class="footer" />
+    <p class="copyright">
+      © 2025 Eljan Rai. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="animation.js"></script>
+</body>
+</html>
