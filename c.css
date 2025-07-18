@@ -315,7 +315,7 @@ nav a.active::after {
 
 .section-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   position: relative;
 }
 
@@ -381,6 +381,104 @@ nav a.active::after {
   font-weight: 600;
   font-size: 1.1rem;
 }
+
+.education-section{
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.see{
+  padding: 20px;
+  flex:1;
+  border: 1px solid var(--bg);
+  border-radius: 10px;
+}
+
+.grade12{
+  padding: 20px;
+  flex: 1;
+  border: 1px solid var(--bg);
+  border-radius: 10px;
+}
+
+.bachelor{
+  flex: 1;
+  padding: 20px;
+  border: 1px solid var(--bg);
+  border-radius: 10px;
+}
+
+.education_header{
+  font-size: 20px;
+  color: var(--primary);
+}
+.education_detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu{
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.edu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+  border-color: var(--primary);
+}
+
+.secondary-detail{
+  color: #C0C0C0;
+  font-size: small;
+  padding-top: 10px;
+}
+.education_header i {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.gpa-score {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--primary);
+}
+
+.status.ongoing {
+  color: limegreen;
+  font-weight: bold;
+}
+
+.progress-bar {
+  margin-top: 10px;
+  height: 8px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: calc(var(--value) / 4 * 100%);
+  background: currentColor;
+  transition: width 0.4s ease-in-out;
+}
+
+.progress-bar.blue { color: #3b82f6; }     /* SEE */
+.progress-bar.purple { color: #c084fc; }   /* Grade 12 */
+.progress-bar.green { color: #22c55e; }    /* Bachelor progress */
+
 
 .projects-list {
   display: grid;
@@ -667,6 +765,7 @@ nav a.active::after {
   margin-bottom: 0.2rem;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
   gap: 1.5rem;
@@ -695,228 +794,36 @@ nav a.active::after {
   box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
 }
 
-.footer {
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.footer-line {
   margin: 3rem 0 1.5rem;
   border: 0;
   border-top: 1px solid var(--border);
-  width: 100%;
 }
 
 .copyright {
   font-size: 0.95rem;
   text-align: center;
   color: var(--secondary);
-  margin-top: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  border-top: 2px solid var(--primary);
+  padding-top: 1rem;
 }
 
-/* Animations */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.floating {
-  animation: float 6s ease-in-out infinite;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 2rem; /* MODIFIED - Reduced top padding for hero on smaller screens */
-  }
-
-  .button-group {
-    padding-top: 40px;
-    justify-content: center;
-  }
-
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   #contact {
     flex-direction: column;
+    gap: 2rem;
   }
-
-  .form-container,
+  
+  .contact-form-container,
   .info-container {
     width: 100%;
   }
-
-  nav {
-    gap: 1.2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    padding: 3rem 1rem; /* MODIFIED - Adjusted padding for very small screens for consistency */
-  }
-
-  .projects-list {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card {
-    padding: 2rem;
-  }
-
-  .profile-container {
-    width: 280px;
-    height: 280px;
-  }
-
-  .profile-container img {
-    width: 260px;
-    height: 260px;
-  }
-
-  .section-title h2 {
-    font-size: 2.2rem;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem;
-  }
-
-  nav {
-    gap: 1rem;
-  }
-}
-
-
-/* Mobile-specific adjustments */
-@media (max-width: 480px) {
-  /* Header adjustments */
-  header {
-    padding: 1rem;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  nav {
-    gap: 0.8rem;
-    justify-content: center;
-  }
-  
-  nav a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0;
-  }
-  
-  /* Hero section */
-  .hero {
-    padding: 1rem;
-    margin-top: 0;
-    min-height: auto;
-  }
-  
-  .hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .typing-text {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-container {
-    width: 220px;
-    height: 220px;
-    margin: 0 auto;
-  }
-  
-  .profile-container img {
-    width: 200px;
-    height: 200px;
-  }
-  
-  /* Button group */
-  .button-group {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .btn {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  /* Technologies grid */
-  .languages-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-  }
-  
-  /* Projects list */
-  .projects-list {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    padding: 1.5rem;
-  }
-  
-  /* Hobbies section */
-  .hobby-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .hobby-card img {
-    height: 120px;
-  }
-  
-  /* Contact section */
-  .form-container,
-  .info-container {
-    padding: 1.5rem;
-  }
-  
-  .contact-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  /* Section titles */
-  .section-title h2 {
-    font-size: 1.8rem;
-  }
-  
-  /* Reduce particle count on mobile */
-  #particles-js {
-    display: none; /* Or reduce particle count in JS */
-  }
-}
-/* Improve touch targets */
-.btn, .hobby-card, .lang-card, .project-card {
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-
-/* Prevent zoom on form inputs */
-input, select, textarea {
-  font-size: 16px !important; /* Prevent iOS zoom */
-}
-
-/* Make buttons more touch-friendly */
-.btn {
-  min-height: 48px; /* Recommended minimum touch target size */
-  min-width: 48px;
 }
