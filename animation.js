@@ -1,10 +1,10 @@
 // Typing Effect
 var textElement = document.querySelector('.typing-text');
 var texts = [
-  "Front End Web Developer",
-  "React Specialist",
-  "JavaScript Developer",
-  "UI/UX Enthusiast"
+  "Backend Developer",
+  "Building REST APIs",
+  "Node.js & Express",
+  "MongoDB Developer"
 ];
 var textIndex = 0;
 var charIndex = 0;
